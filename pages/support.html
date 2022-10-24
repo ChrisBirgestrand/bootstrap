@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/support.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Support</title>
+</head>
+<body>
+    <section>
+        <ul class="nav nav-tabs" id="navId" role="tablist">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">gold</a>
+                    <a class="dropdown-item" href="#tab3Id">boost</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#tab4Id">raid</a>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        
+        <script>
+            var triggerEl = document.querySelector('#navId a')
+            bootstrap.Tab.getInstance(triggerEl).show()
+        </script>
+    </section>
+
+    <section class="s-form">
+        <form  class="form">
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form4Example1">Name</label>
+              <input type="text" id="form4Example1" class="form-control" />
+
+            </div>
+          
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form4Example2">Email address</label>
+              <input type="email" id="form4Example2" class="form-control" />
+
+            </div>
+          
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form4Example3">Message</label>
+              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+
+            </div>
+          
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+              <label class="form-check-label" for="form4Example4">
+                Send me a copy of this message
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary d-flex justify-content-center mb-4">Send</button>
+          </form>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
